@@ -6,17 +6,6 @@ import { Separator } from "@/components/ui/separator";
 import { DateTime } from "luxon";
 import { ModeToggle } from "@/components/ThemeSwitcher";
 
-function Header() {
-  return (
-    <div className="mx-auto w-full max-w-5xl">
-      <section className="flex items-center justify-between">
-        <ModeToggle />
-      </section>
-      <Overview />
-    </div>
-  );
-}
-
 // https://github.com/streamich/react-use/blob/master/src/useInterval.ts
 const useInterval = (callback: Function, delay?: number | null) => {
   const savedCallback = useRef<Function>(() => {});
@@ -61,6 +50,14 @@ function Overview() {
       </div>
     </section>
   );
+  return (
+    <div className="mx-auto w-full max-w-5xl">
+      <section className="flex items-center justify-between">
+        <ModeToggle />
+      </section>
+      <Overview />
+    </div>
+  );  
 }
 
 export default Header;
