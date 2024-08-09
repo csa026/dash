@@ -77,7 +77,7 @@ export default function ServerOverviewClient() {
       <Card>
         <CardContent className="relative px-6 py-3">
           <section className="flex flex-col gap-1">
-            <p className="text-md font-medium">Total bandwidth</p>
+            <p className="text-md font-medium">Total traffic</p>
             {data ? (
               <p className="text-lg font-semibold">
                 {formatBytes(data?.total_bandwidth)}
