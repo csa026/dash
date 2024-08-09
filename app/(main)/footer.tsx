@@ -1,3 +1,5 @@
+import { ModeToggle } from "@/components/ThemeSwitcher";
+
 export default function Footer() {
   return (
     <footer className="mx-auto w-full max-w-5xl">
@@ -6,6 +8,7 @@ export default function Footer() {
           © 1976-{new Date().getFullYear()}{" "}
           <a href={"https://vps.henryho.top"}>@HH_VPS</a>
         </section>
+        <ModeToggle />
       </section>
     </footer>
   );
